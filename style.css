@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --cor-secundaria: #b9d757;
+}
+body {
+  background-color: #141414;
+}
+
+main {
+  height: 100vh;
+}
+
+.container {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 80%;
+  margin: 14% 60% 14% 60%;
+  border-radius: 3%;
+  padding: 1%;
+}
+
+.info--perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  gap: 0px;
+  padding: 7% 0% 0% 0%;
+}
+
+.info--perfil img {
+  width: 140px;
+  margin-bottom: 7%;
+}
+
+.info--perfil h1 {
+  font-size: 34px;
+  font-weight: 500;
+}
+.info--perfil h2 {
+  color: var(--cor-secundaria);
+  font-size: 19px;
+}
+
+.info--perfil p {
+  font-size: 21px;
+  font-weight: 200;
+}
+.descricao__perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  text-align: center;
+  padding: 9% 0 0 0;
+}
+.redes--sociais {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  gap: 15px;
+  padding: 5%;
+}
+
+.redes--sociais a {
+  background-color: #333333;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  width: 460px;
+  height: 57px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.redes--sociais a:hover {
+  background-color: var(--cor-secundaria);
+}
+
+.attribution {
+  background-color: var(--cor-secundaria);
+  color: black;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media (min-width: 1115px) and (max-width: 1920px) {
+  main {
+    height: 100%;
+  }
+  .container {
+    margin-left: 34%;
+    margin-right: 34%;
+  }
+
+  .attribution {
+    min-height: 20%;
+  }
+}
+
+@media (min-width: 1114px) {
+  main {
+    height: 100%;
+  }
+  .container {
+    margin-left: 23%;
+    margin-right: 23%;
+  }
+
+  .redes--sociais a {
+    width: 46vw;
+  }
+}
+
+@media (min-width: 940px) and (max-width: 1113px) {
+  main {
+    height: 100%;
+  }
+  .container {
+    margin-left: 23%;
+    margin-right: 23%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 939px) {
+  main {
+    height: 100%;
+  }
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .redes--sociais a {
+    width: 80vw;
+  }
+
+  .info--perfil p {
+    font-size: 13px;
+  }
+}
